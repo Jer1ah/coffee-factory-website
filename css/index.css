@@ -242,7 +242,7 @@ body {
   font-family: "Marcellus", serif;
   letter-spacing: 0.25rem;
   text-transform: uppercase;
-  margin-top: 7.5rem;
+  margin-top: 9rem;
 }
 .testimonials .coffee-bean-icon {
   height: 1.5rem;
@@ -328,7 +328,7 @@ body {
   list-style: none;
   padding: 0;
   width: 70rem;
-  margin: 3.5rem 0 5rem;
+  margin: 3.5rem 0 6rem;
 }
 .blog__listItem {
   width: 31%;
@@ -373,7 +373,7 @@ body {
 
 .testimonials__list {
   width: 50rem;
-  margin: 0 auto 7.5rem;
+  margin: 0 auto 9rem;
 }
 .testimonials__listItem p {
   color: white;
@@ -387,7 +387,7 @@ body {
   align-items: center;
   justify-content: center;
   color: white;
-  margin-top: 1.5rem;
+  margin-top: 2rem;
   font-family: "Marcellus", serif;
 }
 .testimonials__listItem .author h5 {
@@ -401,6 +401,32 @@ body {
   font-weight: 300;
   margin-left: 0.5rem;
   opacity: 0.85;
+}
+
+.slick-dots {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  margin-top: 2.75rem;
+}
+.slick-dots li {
+  margin: 0 0.5rem;
+}
+.slick-dots li button {
+  height: 0.75rem;
+  width: 0.75rem;
+  border-radius: 50%;
+  border: none;
+  background-color: transparent;
+  border: 0.15rem solid #cccccc;
+  text-indent: -1000px;
+  outline: none;
+}
+.slick-dots li.slick-active button {
+  background-color: #f2f2f2;
+  border: 0.15rem solid #f2f2f2;
 }
 
 /*# sourceMappingURL=index.css.map */
