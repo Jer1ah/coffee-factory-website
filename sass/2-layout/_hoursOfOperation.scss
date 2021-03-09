@@ -1,0 +1,36 @@
+.hours-of-operation {
+    @include displayFlex(row, flex-start, flex-start);
+    height: 35rem;
+
+    .left-side {
+        position: relative;
+        width: 50%;
+        height: 100%;
+
+        &__background-image {
+            position: absolute;
+            object-fit: cover;
+            z-index: -1;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .right-side {
+        position: relative;
+        width: 50%;
+        height: 100%;
+
+        &__background-image {
+            position: absolute;
+            object-fit: cover;
+            z-index: -1;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
