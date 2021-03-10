@@ -294,7 +294,18 @@ body {
   width: 100%;
   height: 100%;
 }
+.hours-of-operation .left-side__coffee-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 15;
+}
 .hours-of-operation .right-side {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
   position: relative;
   width: 50%;
   height: 100%;
@@ -307,6 +318,49 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
+}
+.hours-of-operation .right-side h3 {
+  color: white;
+  font-size: 2rem;
+  font-family: "Marcellus", serif;
+  text-transform: uppercase;
+  width: 70%;
+  text-align: center;
+  margin-top: 9.5rem;
+}
+.hours-of-operation .right-side__hours-list {
+  list-style: none;
+  padding: 0;
+}
+.hours-of-operation .right-side__hours-listItem {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.hours-of-operation .right-side__hours-listItem span {
+  color: white;
+  font-weight: 300;
+  font-size: 1.2rem;
+}
+.hours-of-operation .right-side__reservations-list {
+  list-style: none;
+  padding: 0;
+}
+.hours-of-operation .right-side__reservations-listItem {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.hours-of-operation .right-side__reservations-listItem span {
+  color: white;
+  font-weight: 300;
+  font-size: 1.2rem;
+}
+.hours-of-operation .right-side .list-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 75%;
+  margin-top: 5rem;
 }
 
 .navigation {
