@@ -1,0 +1,57 @@
+.brands {
+    &__wrapper {
+        @include displayFlex(row, center, space-between);
+        width: 70rem;
+        margin: 7.5rem auto;
+    }
+
+    &__info {
+        width: 40%;
+
+        h3 {
+            font-family: 'Marcellus', serif;
+            font-size: 2.25rem;
+            letter-spacing: .15rem;
+        }
+
+        p {
+            font-size: 1.15rem;
+            font-weight: 300;
+            line-height: 1.75rem;
+            opacity: .75;
+            margin: 1.25rem 0 1.75rem;
+        }
+
+        a {
+            text-decoration: none;
+            font-size: .9rem;
+            font-weight: 400;
+            border: .1rem solid black;
+            color: black;
+            padding: .85rem 2rem;
+            display: inline-block;
+            letter-spacing: .1rem;
+        }
+    }
+
+    &__list {
+        @include displayFlex(row, flex-start, space-between);
+        flex-wrap: wrap;
+        list-style: none;
+        padding: 0;
+        width: 45%;
+
+        &Item {
+            width: 28.5%;
+
+            img {
+                width: 85%;
+                height: 85%;
+            }
+
+            &:nth-child(1), &:nth-child(2), &:nth-child(3) {
+                margin-bottom: 2.5rem;
+            }
+        }
+    }
+}
