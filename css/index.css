@@ -417,6 +417,74 @@ body {
   margin-bottom: 2.5rem;
 }
 
+.images__list {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.images__listItem {
+  width: 25%;
+}
+.images__listItem img {
+  width: 100%;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  margin-top: -1rem;
+  padding: 0.1rem;
+}
+.contact__logo {
+  margin-top: 7.5rem;
+}
+.contact p {
+  color: white;
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 1.75rem;
+  width: 40rem;
+  text-align: center;
+  opacity: 0.75;
+  margin: 2rem 0 4rem;
+}
+.contact h4 {
+  color: white;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  font-family: "Marcellus", serif;
+  opacity: 0.9;
+  letter-spacing: 0.1rem;
+  margin-bottom: 0.5rem;
+}
+.contact span {
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 300;
+  opacity: 0.85;
+  margin-bottom: 0.25rem;
+  display: inline-block;
+}
+.contact .second-span {
+  margin-bottom: 5rem;
+}
+.contact__input-wrapper {
+  margin-bottom: 7.5rem;
+}
+.contact__background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
 .navigation {
   display: flex;
   flex-direction: row;
