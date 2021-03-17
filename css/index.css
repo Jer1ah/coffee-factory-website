@@ -473,7 +473,40 @@ body {
   margin-bottom: 5rem;
 }
 .contact__input-wrapper {
-  margin-bottom: 7.5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin: 0.5rem 0 7.5rem;
+  height: 3.25rem;
+}
+.contact input {
+  border: 0.1rem solid white;
+  height: 100%;
+  width: 17.5rem;
+  background: transparent;
+  text-indent: 1rem;
+  outline: none;
+}
+.contact input::placeholder {
+  color: white;
+  opacity: 0.75;
+  font-size: 0.9rem;
+  font-weight: 300;
+  letter-spacing: 0.1rem;
+}
+.contact button {
+  background-color: white;
+  color: black;
+  border: none;
+  height: 100%;
+  padding: 0 2rem;
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  outline: none;
+}
+.contact button:hover {
+  cursor: pointer;
 }
 .contact__background-image {
   position: absolute;
