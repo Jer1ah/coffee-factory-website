@@ -1,0 +1,43 @@
+.footer {
+    @include displayFlex(row, center, space-between);
+    padding: 3.5rem 7.5rem;
+    background-color: #121212;
+
+    span {
+        color: white;
+        font-size: 1rem;
+        font-weight: 300;
+        opacity: .75;
+    }
+
+    &__navigation-list {
+        @include displayFlex(row, center, center);
+        list-style: none;
+
+        &Item {
+            margin: 0 1rem;
+
+            a {
+                color: white;
+                text-decoration: none;
+                font-size: 1.1rem;
+                opacity: .95;
+                font-family: 'Marcellus', serif;
+            }
+        }
+    }
+
+    &__social-list {
+        @include displayFlex(row, center, flex-end);
+        list-style: none;
+
+        &Item {
+            color: white;
+            margin-left: 1.5rem;
+
+            i {
+                font-size: 1rem;
+            }
+        }
+    }
+}
