@@ -31,6 +31,12 @@
             padding: .85rem 2rem;
             display: inline-block;
             letter-spacing: .1rem;
+            transition: all .25s;
+
+            &:hover {
+                background-color: black;
+                color: white;
+            }
         }
     }
 

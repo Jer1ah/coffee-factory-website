@@ -50,6 +50,7 @@
 
     input {
         border: .1rem solid white;
+        border-right: none;
         height: 100%;
         width: 17.5rem;
         background: transparent;
@@ -74,9 +75,11 @@
         font-size: 1rem;
         letter-spacing: .1rem;
         outline: none;
+        transition: all .25s;
 
         &:hover {
             cursor: pointer;
+            background-color: darken(white, 25%);
         }
     }
 

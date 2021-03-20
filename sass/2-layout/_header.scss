@@ -46,6 +46,12 @@
             padding: 1.25rem 3.5rem;
             text-transform: uppercase;
             letter-spacing: .1rem;
+            transition: all .25s;
+
+            &:hover {
+                background-color: white;
+                color: black;
+            }
         }
     }
 
