@@ -611,53 +611,6 @@ body {
   opacity: 0.85;
 }
 
-.blog-page__list {
-  width: 60rem;
-  margin: 7.5rem auto;
-  list-style: none;
-}
-.blog-page__listItem {
-  width: 100%;
-  margin-bottom: 4rem;
-}
-.blog-page__listItem img {
-  width: 100%;
-}
-.blog-page__listItem span {
-  font-size: 0.9rem;
-  font-weight: 300;
-  display: inline-block;
-  margin: 1rem 0;
-}
-.blog-page__listItem h3 {
-  font-family: "Marcellus", serif;
-  font-size: 1.75rem;
-  font-weight: 500;
-  line-height: 1.25rem;
-}
-.blog-page__listItem p {
-  font-size: 1rem;
-  font-weight: 300;
-  margin: 1rem 0;
-  opacity: 0.85;
-  line-height: 1.75rem;
-}
-.blog-page__listItem a {
-  text-decoration: none;
-  color: black;
-  font-size: 0.85rem;
-  text-transform: uppercase;
-  font-weight: 500;
-  letter-spacing: 0.05rem;
-  transition: all 0.2s;
-}
-.blog-page__listItem a:hover {
-  color: #be9c79;
-}
-.blog-page__listItem:last-child {
-  margin-bottom: 0;
-}
-
 .navigation {
   display: flex;
   flex-direction: row;
@@ -759,7 +712,6 @@ body {
   opacity: 0.85;
   letter-spacing: 0.15rem;
   margin: 1.75rem 0 0.75rem;
-  line-height: 1.65rem;
 }
 .blog__listItem p {
   width: 100%;
@@ -908,4 +860,4 @@ body {
   margin-left: 1rem;
 }
 
-/*# sourceMappingURL=index.css.map */
+/*# sourceMappingURL=index.cs.map */
