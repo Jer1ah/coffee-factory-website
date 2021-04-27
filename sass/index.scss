@@ -5,24 +5,3 @@
 @import '1-abstracts/functions';
 @import '1-abstracts/mixins';
 @import '1-abstracts/variables';
-
-// 2-layout folder 
-@import '2-layout/header';
-@import '2-layout/info';
-@import '2-layout/products';
-@import '2-layout/blog';
-@import '2-layout/testimonials';
-@import '2-layout/menu';
-@import '2-layout/hoursOfOperation';
-@import '2-layout/brands';
-@import '2-layout/images';
-@import '2-layout/contact';
-@import '2-layout/footer';
-@import '2-layout/blog-page/blog-header';
-@import '2-layout/blog-page/blog-list';
-
-// 3-components folder
-@import '3-components/navigation';
-@import '3-components/blogList';
-@import '3-components/testimonialsList';
-@import '3-components/menuList';
