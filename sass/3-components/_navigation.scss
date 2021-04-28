@@ -1,0 +1,27 @@
+.navigation {
+    @include displayFlex(row, center, center);
+    height: 5rem;
+    border-bottom: .01rem solid rgba(255,255,255,.25);
+
+    &__list {
+        @include displayFlex(row, center, center);
+        list-style: none;
+    }
+
+    &__listItem {
+        margin: 0 1rem;
+        opacity: .85;
+
+        a {
+            text-decoration: none;
+            font-size: .85rem;
+            color: white;
+            text-transform: uppercase;
+            letter-spacing: .1rem;
+        }
+    }
+
+    .active {
+        color: $primary-brown;
+    }
+}

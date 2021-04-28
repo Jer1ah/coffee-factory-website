@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 62.5%;
+  font-family: "Poppins", sans-serif;
+}
+
+.header {
+  background: url("https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/home-3-slider-image-3-new.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+}
+.header__heading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.header__heading span {
+  color: #be9c79;
+  font-family: "Great Vibes", cursive;
+  font-size: 2rem;
+}
+.header__heading h1 {
+  color: white;
+  font-size: 3.5rem;
+  font-family: "Marcellus", serif;
+  text-transform: uppercase;
+  letter-spacing: 0.35rem;
+  width: 50rem;
+  opacity: 0.85;
+}
+.header__buttons {
+  margin-top: 2.5rem;
+}
+.header__buttons-button {
+  text-decoration: none;
+  color: white;
+  border: 0.1rem solid white;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  margin: 0 0.25rem;
+  padding: 1rem 1.5rem;
+  transition: all 0.35s;
+}
+.header__buttons-button:hover {
+  background-color: #be9c79;
+  border: 0.1rem solid #be9c79;
+  color: inherit;
+}
+.header__buttons-button:first-child {
+  background-color: #be9c79;
+  border: 0.1rem solid #be9c79;
+  color: inherit;
+}
+.header__buttons-button:first-child:hover {
+  color: #be9c79;
+  background-color: transparent;
+}
+.header i {
+  color: #be9c79;
+  font-size: 2rem;
+  position: absolute;
+  bottom: 0.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.navigation {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 5rem;
+  border-bottom: 0.01rem solid rgba(255, 255, 255, 0.25);
+}
+.navigation__list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+}
+.navigation__listItem {
+  margin: 0 1rem;
+  opacity: 0.85;
+}
+.navigation__listItem a {
+  text-decoration: none;
+  font-size: 0.85rem;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+.navigation .active {
+  color: #be9c79;
+}
+
+/*# sourceMappingURL=index.css.map */
