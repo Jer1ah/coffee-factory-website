@@ -1,0 +1,51 @@
+.ourStory {
+    position: relative;
+    height: 40rem;
+
+    &__background-image1 {
+        width: 50%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        z-index: -1;
+    }
+
+    &__background-image2 {
+        width: 50%;
+        height: 100%;
+        position: absolute;
+        right: 0;
+        z-index: -1;
+    }
+
+    &__module {
+        width: 35rem;
+        padding: 2.5rem 2rem;
+        background-color: rgba(0,0,0,.35);
+        position: absolute;
+        top: 50%;
+        left: 62.5%;
+        transform: translate(-50%, -50%);
+
+        h3 {
+            @include displayFlex(column, flex-start, flex-start);
+            color: white;
+            font-size: 2.75rem;
+            line-height: 1.85rem;
+            opacity: .85;
+            font-weight: 600;
+
+            span {
+                color: $primary-brown;
+                font-family: 'Great Vibes', cursive;
+            }
+        }
+
+        p {
+            color: rgba(255,255,255,.4);
+            font-size: 1rem;
+            margin-top: 2rem;
+            line-height: 1.65rem;
+        }
+    }
+}
