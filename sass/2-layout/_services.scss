@@ -1,0 +1,47 @@
+.services {
+    background-color: $primary-brown;
+    padding: .1rem;
+
+    &__list {
+        @include displayFlex(row, center, space-between);
+        list-style: none;
+        padding: 0;
+        margin: 7.5rem auto;
+        width: 70rem;
+    }
+
+    &__listItem {
+        @include displayFlex(column, center, flex-start);
+        text-align: center;
+        width: 29%;
+
+        .icon-wrapper {
+            border: .1rem solid black;
+            height: 6.5rem;
+            width: 6.5rem;
+            @include displayFlex(row, center, center);
+        }
+
+        .first-icon {
+            width: 3.25rem;
+        }
+
+        img {
+            width: 3.75rem;
+        }
+
+        h5 {
+            font-size: 1.25rem;
+            text-transform: uppercase;
+            margin: 1.25rem 0;
+            font-weight: 500;
+            opacity: .85;
+        }
+
+        p {
+            font-size: 1rem;
+            opacity: .85;
+            font-weight: 300;
+        }
+    }
+}

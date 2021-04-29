@@ -126,6 +126,56 @@ body {
   line-height: 1.65rem;
 }
 
+.services {
+  background-color: #be9c79;
+  padding: 0.1rem;
+}
+.services__list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+  margin: 7.5rem auto;
+  width: 70rem;
+}
+.services__listItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+  width: 29%;
+}
+.services__listItem .icon-wrapper {
+  border: 0.1rem solid black;
+  height: 6.5rem;
+  width: 6.5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.services__listItem .first-icon {
+  width: 3.25rem;
+}
+.services__listItem img {
+  width: 3.75rem;
+}
+.services__listItem h5 {
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  margin: 1.25rem 0;
+  font-weight: 500;
+  opacity: 0.85;
+}
+.services__listItem p {
+  font-size: 1rem;
+  opacity: 0.85;
+  font-weight: 300;
+}
+
 .navigation {
   display: flex;
   flex-direction: row;
