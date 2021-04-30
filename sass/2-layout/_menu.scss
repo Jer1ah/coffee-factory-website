@@ -1,0 +1,61 @@
+.menu {
+    @include displayFlex(column, center, flex-start);
+    padding: 5rem 0;
+    background: url('../../images/chalkboard-background.png');
+    background-size: cover;
+    background-position: center;
+
+    h2 {
+        @include displayFlex(column, center, center);
+        line-height: 2.15rem;
+        color: white;
+        opacity: .85;
+        font-size: 2.75rem;
+
+        span {
+            color: $primary-brown;
+            font-family: 'Great Vibes', cursive;
+            font-size: 3rem;
+        }
+    }
+
+    p {
+        font-size: 1rem;
+        opacity: .85;
+        color: white;
+        width: 40rem;
+        text-align: center;
+        margin: 2rem 0 2.5rem;
+    }
+
+    &__list {
+        @include displayFlex(row, center, space-between);
+        list-style-type: none;
+        padding: 0;
+        width: 70rem;
+    }
+
+    &__listItem {
+        @include displayFlex(column, center, flex-start);
+        width: 22%;
+
+        img {
+            width: 100%;
+        }
+
+        h5 {
+            font-size: 1.35rem;
+            color: white;
+            opacity: .85;
+            font-weight: 500;
+            margin: 1rem 0 .5rem;
+        }
+
+        p {
+            width: 100%;
+            opacity: .75;
+            font-size: .9rem;
+            margin-top: 0;
+        }
+    }
+}
