@@ -239,7 +239,84 @@ body {
   width: 100%;
   opacity: 0.75;
   font-size: 0.9rem;
-  margin-top: 0;
+  margin: 0;
+}
+.menu__listItem span {
+  color: white;
+  font-size: 1.25rem;
+  display: inline-block;
+  margin-top: 0.75rem;
+}
+
+.reviews {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background: url("../../images/coffee-grounds-background.png");
+  background-position: center;
+  background-size: cover;
+}
+.reviews h2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  line-height: 2.15rem;
+  color: white;
+  opacity: 0.85;
+  font-size: 2.75rem;
+  margin: 7.5rem 0 1.5rem;
+}
+.reviews h2 span {
+  color: #be9c79;
+  font-family: "Great Vibes", cursive;
+  font-size: 3rem;
+}
+.reviews p {
+  font-size: 1rem;
+  color: white;
+  opacity: 0.65;
+  width: 40rem;
+  text-align: center;
+  margin-bottom: 6.5rem;
+  font-weight: 300;
+}
+.reviews__list {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-start;
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+}
+.reviews__listItem {
+  width: 20%;
+  background-color: #be9c79;
+  padding: 1.5rem 1.75rem;
+}
+.reviews__listItem:nth-child(odd) {
+  background-color: #b2895f;
+}
+.reviews__listItem p {
+  color: white;
+  opacity: 0.9;
+  width: 100%;
+  text-align: left;
+  margin: 0 0 1.5rem 0;
+}
+.reviews__listItem .user-wrapper {
+  color: white;
+}
+.reviews__listItem .user-wrapper h5 {
+  font-size: 1rem;
+  font-weight: 400;
+}
+.reviews__listItem .user-wrapper span {
+  font-weight: 300;
+  opacity: 0.75;
+  font-size: 0.85rem;
 }
 
 .navigation {

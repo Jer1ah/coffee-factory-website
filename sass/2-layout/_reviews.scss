@@ -1,0 +1,71 @@
+.reviews {
+    @include displayFlex(column, center, flex-start);
+    background: url('../../images/coffee-grounds-background.png');
+    background-position: center;
+    background-size: cover;
+
+    h2 {
+        @include displayFlex(column, center, flex-start);
+        line-height: 2.15rem;
+        color: white;
+        opacity: .85;
+        font-size: 2.75rem;
+        margin: 7.5rem 0 1.5rem;
+
+        span {
+            color: $primary-brown;
+            font-family: 'Great Vibes', cursive;
+            font-size: 3rem;
+        }
+    }
+
+    p {
+        font-size: 1rem;
+        color: white;
+        opacity: .65;
+        width: 40rem;
+        text-align: center;
+        margin-bottom: 6.5rem;
+        font-weight: 300;
+    }
+
+    &__list {
+        @include displayFlex(row, flex-end, flex-start);
+        list-style-type: none;
+        padding: 0;
+        width: 100%;
+    }
+
+    &__listItem {
+        width: 20%;
+        background-color: $primary-brown;
+        padding: 1.5rem 1.75rem;
+
+        &:nth-child(odd) {
+            background-color: darken($primary-brown, 7.5%);
+        }
+
+        p {
+            color: white;
+            opacity: .9;
+            width: 100%;
+            text-align: left;
+            margin: 0 0 1.5rem 0;
+        }
+
+        .user-wrapper {
+            color: white;
+
+            h5 {
+                font-size: 1rem;
+                font-weight: 400;
+            }
+
+            span {
+                font-weight: 300;
+                opacity: .75;
+                font-size: .85rem;
+            }
+        }
+    }
+}
