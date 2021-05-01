@@ -389,6 +389,9 @@ body {
   justify-content: center;
   height: 5rem;
   border-bottom: 0.01rem solid rgba(255, 255, 255, 0.25);
+  width: 100%;
+  z-index: 250;
+  transition: all 0.5s;
 }
 .navigation__list {
   display: flex;
@@ -410,6 +413,43 @@ body {
 }
 .navigation .active {
   color: #be9c79;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+@media (max-width: 725px) {
+  .navigation {
+    background-color: #120f0f;
+    border-bottom: none;
+    height: 4rem;
+  }
+
+  .navigation__list {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.75;
+    position: absolute;
+    right: 2.5rem;
+  }
+  .mobile-menu i {
+    color: white;
+    position: static;
+    font-size: 1.15rem;
+  }
+  .mobile-menu h5 {
+    color: white;
+    font-size: 1.15rem;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */
