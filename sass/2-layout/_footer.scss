@@ -1,0 +1,63 @@
+.footer {
+    background-color: $dark-brown;
+    padding: .1rem;
+
+    &__wrapper {
+        @include displayFlex(row, flex-start, space-between);
+        margin: 5rem auto;
+        width: 65rem;
+        max-width: 90%;
+    }
+
+    &__content {
+        h3 {
+            color: white;
+            font-size: 1.15rem;
+            text-transform: uppercase;
+            opacity: .85;
+            font-weight: 500;
+            margin-bottom: 1.25rem;
+        }
+
+        p {
+            font-size: .9rem;
+            color: white;
+            font-weight: 300;
+            max-width: 17.5rem;
+            opacity: .75;
+        }
+
+        span {
+            @include displayFlex(row, center, flex-start);
+            margin-bottom: 1rem;
+
+            i {
+                color: white;
+                margin-right: 1rem;
+                opacity: .85;
+                font-size: 1rem;
+            }
+
+            p {
+                font-size: .9rem;
+                opacity: .85;
+            }
+        }
+    }
+
+    &-menu__list {
+        list-style-type: none;
+        padding: 0;
+
+        &Item {
+            margin-bottom: .5rem;
+
+            a {
+                text-decoration: none;
+                color: white;
+                opacity: .85;
+                font-size: 1rem;
+            }
+        }
+    }
+}

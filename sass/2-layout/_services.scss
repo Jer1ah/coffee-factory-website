@@ -3,7 +3,7 @@
     padding: .1rem;
 
     &__list {
-        @include displayFlex(row, center, space-between);
+        @include displayFlex(row, flex-start, space-between);
         list-style: none;
         padding: 0;
         margin: 7.5rem auto;

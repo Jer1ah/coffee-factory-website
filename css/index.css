@@ -133,7 +133,7 @@ body {
 .services__list {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   list-style: none;
   padding: 0;
@@ -212,7 +212,7 @@ body {
 .menu__list {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   list-style-type: none;
   padding: 0;
@@ -224,6 +224,8 @@ body {
   align-items: center;
   justify-content: flex-start;
   width: 22%;
+  height: 24rem;
+  position: relative;
 }
 .menu__listItem img {
   width: 100%;
@@ -246,6 +248,8 @@ body {
   font-size: 1.25rem;
   display: inline-block;
   margin-top: 0.75rem;
+  position: absolute;
+  bottom: 0;
 }
 
 .reviews {
@@ -317,6 +321,65 @@ body {
   font-weight: 300;
   opacity: 0.75;
   font-size: 0.85rem;
+}
+
+.footer {
+  background-color: #120f0f;
+  padding: 0.1rem;
+}
+.footer__wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin: 5rem auto;
+  width: 65rem;
+  max-width: 90%;
+}
+.footer__content h3 {
+  color: white;
+  font-size: 1.15rem;
+  text-transform: uppercase;
+  opacity: 0.85;
+  font-weight: 500;
+  margin-bottom: 1.25rem;
+}
+.footer__content p {
+  font-size: 0.9rem;
+  color: white;
+  font-weight: 300;
+  max-width: 17.5rem;
+  opacity: 0.75;
+}
+.footer__content span {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 1rem;
+}
+.footer__content span i {
+  color: white;
+  margin-right: 1rem;
+  opacity: 0.85;
+  font-size: 1rem;
+}
+.footer__content span p {
+  font-size: 0.9rem;
+  opacity: 0.85;
+}
+.footer-menu__list {
+  list-style-type: none;
+  padding: 0;
+}
+.footer-menu__listItem {
+  margin-bottom: 0.5rem;
+}
+.footer-menu__listItem a {
+  text-decoration: none;
+  color: white;
+  opacity: 0.85;
+  font-size: 1rem;
 }
 
 .navigation {
