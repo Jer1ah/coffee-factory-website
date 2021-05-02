@@ -3,7 +3,7 @@
     height: 5rem;
     border-bottom: .01rem solid rgba(255,255,255,.25);
     width: 100%;
-    z-index: 250;
+    z-index: 150;
     transition: all .5s;
 
     &__list {
@@ -46,22 +46,50 @@
     }
 
     .mobile-menu {
-        @include displayFlex(row, center, center);
         opacity: .75;
         position: absolute;
-        right: 2.5rem;
+        width: 100%;
+        height: 100%;
+        z-index: 250;
+        display: inline-block;
 
-        i {
+        &__logo {
             color: white;
-            position: static;
-            font-size: 1.15rem;
-        }
-
-        h5 {
-            color: white;
-            font-size: 1.15rem;
+            position: absolute;
+            left: 2.5rem;
+            top: 50%;
+            transform: translateY(-50%);
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 1.25rem;
+            line-height: 1.15rem;
             font-weight: 500;
             letter-spacing: .1rem;
+        }
+
+        &__button {
+            @include displayFlex(row, center, center);
+            position: absolute;
+            right: 2.5rem;
+            top: 50%;
+            transform: translateY(-50%);
+
+            i {
+                color: white;
+                position: static;
+                font-size: 1.15rem;
+            }
+    
+            h5 {
+                color: white;
+                font-size: 1.15rem;
+                font-weight: 500;
+                letter-spacing: .1rem;
+            }
+
+            &:hover {
+                cursor: pointer;
+            }
         }
     }
 }
