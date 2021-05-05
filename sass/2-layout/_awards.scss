@@ -1,0 +1,45 @@
+.awards {
+    background: url('../../images/coffee-grounds-background.png');
+    background-size: cover;
+    background-position: center;
+    padding: .1rem;
+
+    &__list {
+        @include displayFlex(row, center, space-between);
+        list-style-type: none;
+        padding: 0;
+        margin: 7.5rem auto;
+        width: 50rem;
+        max-width: 90%;
+
+        &Item {
+            @include displayFlex(column, center, flex-start);
+
+            .icon-wrapper {
+                border: .1rem solid $primary-brown;
+                height: 5rem;
+                width: 5rem;
+                @include displayFlex(row, center, center);
+
+                i {
+                    color: $primary-brown;
+                    font-size: 1.5rem;
+                }
+            }
+
+            h5 {
+                color: $primary-brown;
+                font-size: 1.75rem;
+                font-weight: 500;
+                margin: 1.25rem 0 .25rem;
+            }
+
+            span {
+                color: white;
+                opacity: .75;
+                font-size: 1rem;
+                font-weight: 300;
+            }
+        }
+    }
+}

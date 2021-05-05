@@ -29,6 +29,11 @@ const navigationController = (() => {
             _navigation.style.borderBottom = ".01rem solid rgba(255,255,255,.25)";
             _navigation.style.backgroundColor = "inherit";
         }
+
+        if(window.scrollY > 150) {
+            _navigation.style.backgroundColor = "#120f0f";
+            _navigation.style.borderBottom = "none";
+        }
     });
 
 })();

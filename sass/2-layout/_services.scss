@@ -8,6 +8,7 @@
         padding: 0;
         margin: 7.5rem auto;
         width: 70rem;
+        max-width: 90%;
     }
 
     &__listItem {
@@ -42,6 +43,25 @@
             font-size: 1rem;
             opacity: .85;
             font-weight: 300;
+        }
+    }
+}
+
+//media queries
+@media(max-width: 775px) {
+    .services {
+        &__list {
+            flex-direction: column;
+            width: 35rem;
+
+            &Item {
+                width: 100%;
+                margin-bottom: 3.3rem;
+
+                &:last-child {
+                    margin: 0;
+                }
+            }
         }
     }
 }
