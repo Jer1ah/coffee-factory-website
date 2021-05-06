@@ -507,23 +507,33 @@ body {
   justify-content: flex-start;
 }
 .awards__listItem .icon-wrapper {
-  border: 0.1rem solid #be9c79;
-  height: 5rem;
-  width: 5rem;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  border: 0.1rem solid #be9c79;
+  height: 5rem;
+  width: 5rem;
+  transition: all 0.35s ease-in-out;
 }
 .awards__listItem .icon-wrapper i {
   color: #be9c79;
   font-size: 1.5rem;
+  transition: all 0.35s ease-in-out;
+}
+.awards__listItem .icon-wrapper:hover {
+  transform: rotate(135deg);
+  background-color: #be9c79;
+}
+.awards__listItem .icon-wrapper:hover i {
+  color: black;
+  transform: rotate(-135deg);
 }
 .awards__listItem h5 {
   color: #be9c79;
   font-size: 1.75rem;
   font-weight: 500;
-  margin: 1.25rem 0 0.25rem;
+  margin: 1.5rem 0 0.25rem;
 }
 .awards__listItem span {
   color: white;
