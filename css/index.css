@@ -383,6 +383,7 @@ body {
   color: white;
   opacity: 0.65;
   width: 40rem;
+  max-width: 90%;
   text-align: center;
   margin-bottom: 6.5rem;
   font-weight: 300;
@@ -424,6 +425,24 @@ body {
   font-size: 0.85rem;
 }
 
+@media (max-width: 1000px) {
+  .reviews__list {
+    flex-direction: column;
+  }
+  .reviews__listItem {
+    width: 100%;
+    padding: 1.75rem 2.25rem;
+  }
+}
+@media (max-width: 725px) {
+  .reviews h2 {
+    font-size: 2rem;
+    line-height: 1.9rem;
+  }
+  .reviews h2 span {
+    font-size: 2.35rem;
+  }
+}
 .footer {
   background-color: #120f0f;
   padding: 0.1rem;
