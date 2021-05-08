@@ -61,3 +61,25 @@
         }
     }
 }
+
+// media queries
+@media(max-width: 875px) {
+    .footer {
+        &__wrapper {
+            flex-direction: column;
+        }
+
+        &__content {
+            margin-bottom: 2.5rem;
+
+            p {
+                width: 27.5rem;
+                max-width: 100%;
+            }
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}

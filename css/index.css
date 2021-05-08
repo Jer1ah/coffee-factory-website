@@ -502,6 +502,21 @@ body {
   font-size: 1rem;
 }
 
+@media (max-width: 875px) {
+  .footer__wrapper {
+    flex-direction: column;
+  }
+  .footer__content {
+    margin-bottom: 2.5rem;
+  }
+  .footer__content p {
+    width: 27.5rem;
+    max-width: 100%;
+  }
+  .footer__content:last-child {
+    margin-bottom: 0;
+  }
+}
 .awards {
   background: url("../../images/coffee-grounds-background.png");
   background-size: cover;
@@ -561,6 +576,28 @@ body {
   font-weight: 300;
 }
 
+@media (max-width: 675px) {
+  .awards__list {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .awards__listItem {
+    width: 40%;
+    margin-bottom: 2.5rem;
+  }
+  .awards__listItem:nth-child(3), .awards__listItem:nth-child(4) {
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 550px) {
+  .awards__listItem {
+    width: 100%;
+    margin-bottom: 3rem;
+  }
+  .awards__listItem:nth-child(3) {
+    margin-bottom: 3rem;
+  }
+}
 .navigation {
   display: flex;
   flex-direction: row;
