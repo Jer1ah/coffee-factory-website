@@ -608,6 +608,8 @@ body {
   width: 100%;
   z-index: 150;
   transition: all 0.5s;
+  position: relative;
+  z-index: 1000;
 }
 .navigation__list {
   display: flex;
@@ -635,6 +637,10 @@ body {
   display: none;
 }
 
+.activeMobileNav {
+  height: 30rem !important;
+}
+
 @media (max-width: 725px) {
   .navigation {
     background-color: #120f0f;
@@ -656,10 +662,9 @@ body {
   }
   .mobile-menu__logo {
     color: white;
-    position: absolute;
+    position: fixed;
     left: 2.5rem;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 0.85rem;
     text-align: center;
     text-transform: uppercase;
     font-size: 1.25rem;
@@ -672,10 +677,9 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    position: absolute;
+    position: fixed;
     right: 2.5rem;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 1.15rem;
   }
   .mobile-menu__button i {
     color: white;

@@ -37,3 +37,16 @@ const navigationController = (() => {
     });
 
 })();
+
+
+const mobileDropdownController = (() => {
+
+    const _navList = document.querySelector('.navigation__list');
+    const _navBackground = document.querySelector('.navigation');
+    const _navButton = document.querySelector('.mobile-menu__button');
+
+    _navButton.addEventListener('click', () => {
+        _navBackground.classList.toggle('activeMobileNav');
+    });
+
+})();
