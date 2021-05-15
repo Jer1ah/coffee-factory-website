@@ -47,6 +47,12 @@ const mobileDropdownController = (() => {
 
     _navButton.addEventListener('click', () => {
         _navBackground.classList.toggle('activeMobileNav');
+
+        if(_navBackground.classList.contains('activeMobileNav')) {
+            _navList.style.display = "flex";
+        } else {
+            _navList.style.display = "none";
+        }
     });
 
 })();

@@ -638,7 +638,7 @@ body {
 }
 
 .activeMobileNav {
-  height: 30rem !important;
+  height: 27.5rem !important;
 }
 
 @media (max-width: 725px) {
@@ -646,10 +646,22 @@ body {
     background-color: #120f0f;
     border-bottom: none;
     height: 4rem;
+    justify-content: flex-start;
+    overflow: hidden;
   }
 
   .navigation__list {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 2rem;
+    margin-top: 4rem;
     display: none;
+  }
+  .navigation__listItem {
+    margin-bottom: 1.5rem;
+  }
+  .navigation__listItem a {
+    font-size: 1rem;
   }
 
   .mobile-menu {
