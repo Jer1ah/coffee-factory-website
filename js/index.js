@@ -1,6 +1,7 @@
 const navigationController = (() => {
     
     const _navigation = document.querySelector('.navigation');
+    const _navList = document.querySelector('.navigation__list');
 
     window.addEventListener('scroll', () => {
 
@@ -25,9 +26,13 @@ const navigationController = (() => {
         if(window.innerWidth <= 725) {
             _navigation.style.backgroundColor = "#120f0f";
             _navigation.style.borderBottom = "none";
+            _navigation.classList.remove('activeMobileNav')
+            _navList.style.display = "none";
         } else {
             _navigation.style.borderBottom = ".01rem solid rgba(255,255,255,.25)";
             _navigation.style.backgroundColor = "inherit";
+            _navigation.classList.remove('activeMobileNav')
+            _navList.style.display = "flex";
         }
 
         if(window.scrollY > 150) {

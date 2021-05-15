@@ -12,23 +12,23 @@
     <title>The Coffee Factory || Fresh Coffee Anytime</title>
 </head>
 <body>
-    <header class="header">
+    <header class="header" id="home">
         <nav class="navigation">
             <ul class="navigation__list">
                 <li class="navigation__listItem">
-                    <a href="#" class="active">Home</a>
+                    <a href="#home">Home</a>
                 </li>
                 <li class="navigation__listItem">
-                    <a href="#">Our Story</a>
+                    <a href="#ourStory">Our Story</a>
                 </li>
                 <li class="navigation__listItem">
-                    <a href="#">Services</a>
+                    <a href="#services">Services</a>
                 </li>
                 <li class="navigation__listItem">
-                    <a href="#">Best Sellers</a>
+                    <a href="#bestSellers">Best Sellers</a>
                 </li>
                 <li class="navigation__listItem">
-                    <a href="#">Reviews</a>
+                    <a href="#reviews">Reviews</a>
                 </li>
             </ul>
             <div class="mobile-menu">
@@ -43,13 +43,13 @@
             <span>Welcome</span>
             <h1>Coffee Factory</h1>
             <div class="header__buttons">
-                <a href="#" class="header__buttons-button">Our Story</a>
-                <a href="#" class="header__buttons-button">View Menu</a>
+                <a href="#ourStory" class="header__buttons-button">Our Story</a>
+                <a href="#bestSellers" class="header__buttons-button">View Menu</a>
             </div> <!-- .header__buttons end -->
         </div> <!-- .header__heading end -->
-        <i class="fas fa-chevron-down"></i>
+        <a href="#ourStory"><i class="fas fa-chevron-down"></i></a>
     </header>
-    <div class="ourStory">
+    <div class="ourStory" id="ourStory">
         <img src="images/ourStory-bg1.png" alt="Coffee house" class="ourStory__background-image1">
         <img src="images/ourStory-bg2.png" alt="Black background" class="ourStory__background-image2">
         <div class="ourStory__module">
@@ -57,7 +57,7 @@
             <p>We have been very fortunate to become a part of both the Plaza Midwood/Elizabeth communities and the South End community. Our main goal is to serve fantastic coffee and food products, but we also strive to create an inclusive community atmosphere at both locations. We believe that community is so important. Our staff and customers have become not just our community but our family and friends.</p>
         </div> <!-- .ourStory__module end -->
     </div> <!-- .ourStory end -->
-    <div class="services">
+    <div class="services" id="services">
         <ul class="services__list">
             <li class="services__listItem">
                 <div class="icon-wrapper">
@@ -82,7 +82,7 @@
             </li>
         </ul>
     </div> <!-- .services end -->
-    <div class="menu">
+    <div class="menu" id="bestSellers">
         <h2><span>Discover</span>BEST COFFEE SELLERS</h2>
         <p>Most of our coffees are single origin so that you can get the full flavor of the bean and get a distinct taste from any country origin you choose.</p>
         <ul class="menu__list">
@@ -112,7 +112,7 @@
             </li>
         </ul>
     </div> <!-- .menu end -->
-    <div class="reviews">
+    <div class="reviews" id="reviews">
         <h2><span>Testimony</span>CUSTOMERS SAYS</h2>
         <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
         <ul class="reviews__list">

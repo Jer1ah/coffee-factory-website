@@ -23,11 +23,12 @@
             color: white;
             text-transform: uppercase;
             letter-spacing: .1rem;
-        }
-    }
+            transition: all .25s;
 
-    .active {
-        color: $primary-brown;
+            &:hover {
+                color: $primary-brown;
+            }
+        }
     }
 }
 

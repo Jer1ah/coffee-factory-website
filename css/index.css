@@ -628,8 +628,9 @@ body {
   color: white;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
+  transition: all 0.25s;
 }
-.navigation .active {
+.navigation__listItem a:hover {
   color: #be9c79;
 }
 
